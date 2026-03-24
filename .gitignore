@@ -1,0 +1,22 @@
+# --- Datasets ---
+# Ignore all CSV and Excel files to keep the repo light
+*.csv
+*Fake.csv
+*.xlsx
+*.xls
+
+# --- Python & ML Artifacts ---
+# Ignore the trained models and scalers (they are large)
+*.pkl
+*.h5
+__pycache__/
+.ipynb_checkpoints/
+
+# --- Environment ---
+.venv/
+env/
+venv/
+.env
+
+# --- Streamlit ---
+.streamlit/
