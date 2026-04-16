@@ -33,7 +33,6 @@ top_movies_indices = movies_df.sort_values('Popularity', ascending=False).head(3
 cosine_sim_subset = cosine_similarity(tfidf_matrix[top_movies_indices], tfidf_matrix)
 
 # 3. COLLABORATIVE FILTERING (SVD / Matrix Factorization)
-# Since the CSV doesn't have User Ratings, we synthesize them for 500 users
 print("Synthesizing Collaborative Filtering Layer (SVD)...")
 num_users = 500
 np.random.seed(42)
